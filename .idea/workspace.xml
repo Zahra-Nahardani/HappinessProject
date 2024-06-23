@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="038b8917-439b-41cb-81c1-8676dc76355a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="038b8917-439b-41cb-81c1-8676dc76355a" name="Changes" comment="second commit - EDA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HappinessReport.py" beforeDir="false" afterPath="$PROJECT_DIR$/HappinessReport.py" afterDir="false" />
     </list>
@@ -84,8 +83,18 @@
       <workItem from="1717482560813" duration="7805000" />
       <workItem from="1717511926686" duration="694000" />
       <workItem from="1717618699472" duration="2899000" />
-      <workItem from="1718989190252" duration="13645000" />
+      <workItem from="1718989190252" duration="18869000" />
+      <workItem from="1719139359851" duration="10125000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit - EDA">
+      <option name="closed" value="true" />
+      <created>1719070283874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719070283874</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +110,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit - EDA" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit - EDA" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HappinessProject$codes.coverage" NAME="codes Coverage Results" MODIFIED="1719056161509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
