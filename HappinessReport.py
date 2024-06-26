@@ -120,7 +120,7 @@ if selected == 'Data Analysis':
     top_5_countries = avg_life_expectancy_sorted.head(5)
     bottom_5_countries = avg_life_expectancy_sorted.tail(5)
     combined_countries = pd.concat([top_5_countries, bottom_5_countries])
-    # Plotting
+
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.barplot(x='Country name', y='Healthy life expectancy at birth', data=combined_countries, palette='viridis')
     ax.set_title('Top and Bottom 5 Countries by Healthy Life Expectancy at Birth', fontsize=16)
@@ -131,16 +131,16 @@ if selected == 'Data Analysis':
 
     # Distribution of Healthy life expectancy
     st.subheader('Box Plot')
-    # Plotting
+
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.boxplot(y=happiness_df_copy['Healthy life expectancy at birth'], ax=ax)
     ax.set_title('Box Plot of Healthy Life Expectancy at Birth', fontsize=16)
     ax.set_xlabel('Healthy Life Expectancy at Birth')
     st.pyplot(fig)
 
-    st.write('In this plot, there are several outliers below the lower whisker. So, as the number of outliers (22) is '
-             'relatively low compared to the total volume of the dataset (2239), it can be reasonable to remove them. '
-             'As outliers can skew statistical measures and effect on analysis of data.')
+    st.write('In this plot, there are several outliers below the lower whisker. So, as the number of outliers (22) is relatively'
+             ' low compared to the total volume of the dataset (2239), it can be reasonable to remove them. As outliers can skew'
+             ' statistical measures and effect on analysis of data.')
 
 # Remove outliers
 Q1 = happiness_df_copy['Healthy life expectancy at birth'].quantile(0.25)
@@ -238,7 +238,7 @@ if selected == 'Data Analysis':
 
 ########################################## Machine Learning
 
-####### Linear Regression #######
+####### Linear Regression
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
@@ -264,10 +264,10 @@ if selected == 'Machine Learning':
     test_r2 = r2_score(y_test, y_pred_test)
 
     st.write(f"**Root Mean Squared Error for Test (RMSE):** {test_rmse:.2f}")
-    st.write(f"**R-Squared (R2) Score for Test:** {test_r2:.2f}")
+    st.write(f"**R-Squared (R²) Score for Test:** {test_r2:.2f}")
 
     st.write(f"**Root Mean Squared Error for Train (RMSE):** {train_rmse:.2f}")
-    st.write(f"**R-Squared (R2) Score for Train:** {train_r2:.2f}")
+    st.write(f"**R-Squared (R²) Score for Train:** {train_r2:.2f}")
 
     # Plot actual vs predicted
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -279,7 +279,7 @@ if selected == 'Machine Learning':
     ax.legend()
     st.pyplot(fig)
 
-    ####### Random Forest Regression #######
+    ####### Random Forest Regression
     st.subheader('Model 2: Random Forest Regression')
 
     from sklearn.ensemble import RandomForestRegressor
@@ -307,7 +307,10 @@ if selected == 'Machine Learning':
     ax.legend()
     st.pyplot(fig)
 
-    st.write("The Random Forest Regression model has a lower RMSE (0.39) compared to the Linear Regression model (0.55),"
-             " indicating that the Random Forest model makes more accurate predictions.")
+    st.write("The comparison of models indicates that the Random Forest Regression significantly outperforms Linear Regression."
+             " The Random Forest model achieved a lower Root Mean Squared Error (RMSE) of 0.41 and a higher R-squared (R²) score "
+             "of 0.86 on the test set, compared to the Linear Regression model's RMSE of 0.56 and R² score of 0.74. These results"
+             " suggest that the Random Forest model provides more accurate predictions and explains a greater proportion of variance"
+             " in the data, making it the preferred choice for our analysis.")
 
 
